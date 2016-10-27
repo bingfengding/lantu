@@ -1,4 +1,6 @@
 <style lang="stylus" scoped rel="stylesheet/stylus">
+.bannero
+    position relative
     .banner
         height 850px
         position relative
@@ -101,7 +103,7 @@
             display block
     .ban_b_dot
         position absolute
-        bottom 5%
+        top 95%
         width 100%
         z-index 2
         ul
@@ -120,12 +122,6 @@
                 background-image url("../images/home/b_dot.png")
             .ban_b_dot_s
                 background-image url("../images/home/b_dot_s.png")
-
-
-
-
-
-
 </style>
 <template>
     <div class="bannero">
@@ -161,7 +157,6 @@
                     <p><img src="../images/home/b2_d3.png" alt=""></p>
                 </div>
             </li>
-
         </ul>
         <div class="ban_b_dot">
             <ul>
