@@ -45,15 +45,15 @@
             return{
                 list:[
                     {
-                        href:"http://www.newcapec.com.cn/",
+                        href:"JavaScript:;",
                         src:require("../images/home/rd1.jpg")
                     },
                     {
-                        href:"http://www.h3c.com.cn/",
+                        href:"JavaScript:;",
                         src:require("../images/home/rd2.jpg")
                     },
                     {
-                        href:"http://www.cmbchina.com/",
+                        href:"JavaScript:;",
                         src:require("../images/home/rd3.jpg")
                     }
                 ]

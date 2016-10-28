@@ -50,7 +50,7 @@
                 <h1>经典案例</h1>
             </div>
             <div class="c_cases_list">
-                <div class="bjTraffic">
+                <div class="bjTraffic" id="bjjt">
                     <h1>
                         北京交通大学
                     </h1>
@@ -61,7 +61,7 @@
                         <img src="../images/case/ct1.jpg">
                     </div>
                 </div>
-                <div class="ctFinance">
+                <div class="ctFinance" id="zycj">
                     <h1>
                         中央财经大学
                     </h1>
@@ -72,7 +72,7 @@
                         <img src="../images/case/ct2.jpg">
                     </div>
                 </div>
-                <div class="cnOpera">
+                <div class="cnOpera" id="zgxq">
                     <h1>
                         中国戏曲学院
                     </h1>

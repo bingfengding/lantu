@@ -129,7 +129,7 @@
             <li class="ban_b3" :class="{ban_d:num == 1 }">
                 <div class="ban_b3_pic">
                     <div class="ban_b3_video">
-                        <video controls id="ban_video">
+                        <video controls id="ban_video" @mouseenter="banEnter" @mouseout="banOut">
                             <source :src="video" type="video/mp4" >
                             您的浏览器不支持此种视频格式。
                         </video>
@@ -187,13 +187,23 @@
                 oVideo.play();
             },
             banChange(index){
-                clearTimeout(t);
+                clearInterval(t);
                 this.num = index +1;
                 timer(() => {
                     let _num = this.num;
                 this.num = _num +1 >this.len ? 1: _num+1;
             }
             );
+            },
+            banEnter(){
+                clearInterval(t);
+            },
+            banOut(){
+                timer(() => {
+                    let _num = this.num;
+                this.num = _num +1 >this.len ? 1: _num+1;
+            }
+            )
             }
         },
         mounted(){

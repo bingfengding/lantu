@@ -1,5 +1,6 @@
 <style scoped lang="stylus" rel="stylesheet/stylus">
     .butn
+        display block
         width 46px
         height @width
         background-image url(../images/mobilSchool/a_d.png)
@@ -164,8 +165,6 @@
                                 left  -10px
                         .liChange
                              font-size 28px
-
-
         .floor_down
             height 602px
             width 100%
@@ -193,12 +192,10 @@
                                     display block
                                     text-align center
                                     margin-bottom 10px
-
                 .fd_img
                     width 688px
                     height 362px
                     float right
-
 </style>
 <template>
     <div class="mobilSchool">
@@ -208,17 +205,17 @@
             </div>
             <div class="flor1_top">
                 <div class="title">
-                    <h2>兰途移动校园</h2>
+                    <h2>**移动校园</h2>
                     <p>——我们做的不仅仅是APP</p>
                 </div>
-                <div class="butn" @click="flip"></div>
+                <div class="butn" @mouseover="flip"></div>
             </div>
         </div>
         <div class="floor_bg1"></div>
         <div class="floor_box">
             <div class="w_at">
                 <div class="fb_title_lf">
-                    <h2>兰途移动校园</h2>
+                    <h2>**移动校园</h2>
                     <p>国内最有粘性的定制化移动校园</p>
                     <p>不只是APP，更是新的校园生态系统</p>
                 </div>
@@ -374,10 +371,10 @@
                 })
             },
             flip(e){
-                console.log(e.target.scrollHeight);
-                console.log(e.target.scrollTop);
-                console.log(e.target.offsetHeight);
-                console.log(e.target.offsetTop);
+                //console.log(e.target.scrollHeight);
+                //console.log(e.target.scrollTop);
+                //console.log(e.target.offsetHeight);
+                //console.log(e.target.offsetTop);
                 console.log(event.clientY);
                 console.log(event.offsetY);
             }

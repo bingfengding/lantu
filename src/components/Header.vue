@@ -17,16 +17,18 @@
                 margin-right 80px
             ul
                 float left
+                height 68px
                 li
                     float left
-                    height 68px
-                    line-height @height
+                    line-height 68px
                     text-align center
                     margin-left 80px
                     a
                         font-size 15px
                         &:hover
                             color rgb(167,195,30)
+                .green
+                    color rgb(167,195,30)
 
 
 </style>
@@ -37,7 +39,7 @@
                 <img src="../images/currency/logo.png">
             </div>
             <ul>
-                <li v-for="item of list" >
+                <li v-for="(item,index) of list"   @click="aClick(index)" :class="{green: index === num}">
                     <router-link :to="item.href">{{item.name}}</router-link>
                 </li>
             </ul>
@@ -49,6 +51,7 @@
     export default{
         data(){
             return{
+                num:0,
                 list : [
 					{
 						name : "首页",
@@ -78,6 +81,12 @@
             }
         },
         components:{
+
+        },
+        methods:{
+            aClick(index){
+               this.num =index;
+            }
 
         }
     }

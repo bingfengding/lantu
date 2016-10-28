@@ -123,15 +123,15 @@
                 list:[
                     {
                         src:require("../images/contact/bg_email.png"),
-                        massage:"service@lantunet.com"
+                        massage:"service@******.com"
                     },
                     {
                         src:require("../images/contact/bg_phone.png"),
-                        massage:"400-030-9411"
+                        massage:"400-000-0000"
                     },
                     {
                          src:require("../images/contact/bg_location.png"),
-                         massage:"成都市高新区环球中心E2"
+                         massage:"成都市***环球中心E2"
                     }
                 ],
                 travel:[
@@ -145,7 +145,7 @@
                     },
                     {
                          src:require("../images/contact/ct_search.png"),
-                         massage:"搜索成都市高新区环球中心E2"
+                         massage:"搜索成都市***环球中心E2"
                     }
                 ]
             }

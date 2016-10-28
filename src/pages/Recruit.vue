@@ -98,9 +98,9 @@
                 </p>
             </div>
             <div class="guarantee">
-                <span>HR:刘女士</span>
-                <span>招聘电话：028-86307598</span>
-                <span>招聘邮箱：liuxt@lantunet.com</span>
+                <span>HR:*女士</span>
+                <span>招聘电话：023-12345678</span>
+                <span>招聘邮箱：****@******.com</span>
             </div>
         </div>
     </div>
