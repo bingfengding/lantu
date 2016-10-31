@@ -40,7 +40,7 @@
             </div>
             <ul>
                 <li v-for="(item,index) of list"   @click="aClick(index)" :class="{green: index === num}">
-                    <router-link :to="item.href">{{item.name}}</router-link>
+                    <router-link :to="item.href" @click="rutClick">{{item.name}}</router-link>
                 </li>
             </ul>
 
@@ -86,6 +86,9 @@
         methods:{
             aClick(index){
                this.num =index;
+            },
+            rutClick(){
+                alert(1);
             }
 
         }

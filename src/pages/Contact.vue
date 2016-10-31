@@ -85,7 +85,7 @@
                     </div>
                     <div class="wx">
                         <div class="wx_img">
-                            <img src="../images/contact/wx.jpg">
+                            <img src="../images/contact/wx.png">
                         </div>
                         <p>打开微信，扫描二维码关注我们</p>
                     </div>
