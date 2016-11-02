@@ -9,14 +9,12 @@
                 overflow hidden
                 width 1500px
                 margin 0 auto
-
                 ul
                     position relative
                     padding 80px 0
                     width 4500px
                     height 740px
                     left -1500px
-                    //transition all 0.5s
                     li
                         float left
                         width 300px
@@ -30,8 +28,6 @@
                         transform scale(1)
                     .ban_max
                         transform scale(1.2)
-                //.expand
-                    //transition all 0.5s
             .ban_page
                 .left
                     position absolute

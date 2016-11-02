@@ -13,6 +13,7 @@
 		components : {
 			MyHeader,
 			MyFooter
+
 		}
 	};
 </script>

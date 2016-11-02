@@ -208,7 +208,7 @@
                     <h2>**移动校园</h2>
                     <p>——我们做的不仅仅是APP</p>
                 </div>
-                <div class="butn" @mouseover="flip"></div>
+                <div class="butn" @click="goOne"></div>
             </div>
         </div>
         <div class="floor_bg1"></div>
@@ -226,7 +226,7 @@
                     </div>
                 </div>
             </div>
-            <div class="butn"></div>
+            <div class="butn" @click="go(1)"></div>
         </div>
         <div class="floor_bg2"></div>
         <div class="floor_box">
@@ -250,7 +250,7 @@
                     <p>真正离不开的一站式校园服务</p>
                 </div>
             </div>
-            <div class="butn"></div>
+            <div class="butn" @click="go(2)"></div>
         </div>
         <div class="floor_bg3"></div>
         <div class="floor_box">
@@ -267,7 +267,7 @@
                     </div>
                 </div>
             </div>
-            <div class="butn"></div>
+            <div class="butn" @click="go(3)"></div>
         </div>
         <div class="floor_bg4"></div>
         <div class="floor_box">
@@ -287,7 +287,7 @@
                     </p>
                 </div>
             </div>
-            <div class="butn"></div>
+            <div class="butn" @click="goBo"></div>
         </div>
         <div class="floor_bg5"></div>
         <div class="floor_down">
@@ -361,7 +361,7 @@
                 this.num = index;
                 console.log(index);
             },
-           banEnter(){
+            banEnter(){
                 clearInterval(t);
             },
             banOut(){
@@ -377,7 +377,41 @@
                 //console.log(e.target.offsetTop);
                 console.log(event.clientY);
                 console.log(event.offsetY);
-            }
+            },
+            goOne(){
+                let _scrollTop = document.body.scrollTop;
+                let timer = setInterval(function () {
+                    if(_scrollTop < 1160){
+                        _scrollTop += 10;
+                        scrollTo(0, _scrollTop);
+                    }else{
+                        clearInterval(timer);
+                    }
+                },10);
+            },
+            go(num){
+                let _scrollTop = document.body.scrollTop;
+                let timer = setInterval(function(){
+                    if(_scrollTop < 1170 + num *1021){
+                        _scrollTop += 10;
+                        scrollTo(0, _scrollTop);
+                    }else{
+                        clearInterval(timer);
+                    }
+                },10);
+            },
+            goBo(){
+                let _scrollTop = document.body.scrollTop;
+                let timer = setInterval(function () {
+                    if(_scrollTop < 5150){
+                        _scrollTop += 10;
+                        scrollTo(0, _scrollTop);
+                    }else{
+                        clearInterval(timer);
+                    }
+                },10);
+            },
+
         },
         mounted(){
             timer(()=>{
