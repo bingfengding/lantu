@@ -370,24 +370,17 @@
                     this.num = _num+2 > this.banList.length ? 0: _num+1;
                 })
             },
-            flip(e){
-                //console.log(e.target.scrollHeight);
-                //console.log(e.target.scrollTop);
-                //console.log(e.target.offsetHeight);
-                //console.log(e.target.offsetTop);
-                console.log(event.clientY);
-                console.log(event.offsetY);
-            },
             goOne(){
                 let _scrollTop = document.body.scrollTop;
                 let timer = setInterval(function () {
                     if(_scrollTop < 1160){
                         _scrollTop += 10;
                         scrollTo(0, _scrollTop);
+                        console.log(_scrollTop);
                     }else{
                         clearInterval(timer);
                     }
-                },10);
+                },5);
             },
             go(num){
                 let _scrollTop = document.body.scrollTop;
@@ -398,7 +391,7 @@
                     }else{
                         clearInterval(timer);
                     }
-                },10);
+                },5);
             },
             goBo(){
                 let _scrollTop = document.body.scrollTop;
@@ -409,7 +402,7 @@
                     }else{
                         clearInterval(timer);
                     }
-                },10);
+                },5);
             },
 
         },
